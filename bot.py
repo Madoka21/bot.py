@@ -26,3 +26,6 @@ async def process_start_command(message: types.Message):
     for c in range (len(b)):
         if c % 3 == 1:
             await message.reply(b[c], b[c + 1], b[c - 1])
+            
+if __name__ == '__main__':
+    executor.start_polling(dp)
